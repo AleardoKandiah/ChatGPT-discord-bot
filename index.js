@@ -27,6 +27,7 @@ client.login(process.env.BOT_TOKEN)
 const BOT_CHANNEL = "918652560129294397"
 const PAST_MESSAGES = 5
 
+// configure bot to listen to messages
 client.on(Events.MessageCreate, async (message) => {
     if (message.author.bot) return
     if (message.channel.id !== BOT_CHANNEL) return
