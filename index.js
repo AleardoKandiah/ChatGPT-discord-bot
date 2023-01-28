@@ -29,6 +29,7 @@ const PAST_MESSAGES = 5
 
 // configure bot to listen to messages
 client.on(Events.MessageCreate, async (message) => {
+    // prevent bot from responding to itself
     if (message.author.bot) return
     if (message.channel.id !== BOT_CHANNEL) return
 
