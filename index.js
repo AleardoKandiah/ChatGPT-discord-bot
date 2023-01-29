@@ -7,7 +7,6 @@ const config = new Configuration({
     apiKey: process.env.OPENAI_KEY
 })
 
-
 const openai = new OpenAIApi(config)
 
 // specify what the bot is able to see
