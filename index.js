@@ -36,7 +36,7 @@ client.on(Events.MessageCreate, async (message) => {
 
     message.channel.sendTyping()
 
-    // grab id of message  
+    // grab id of message 
     let messages = Array.from(await message.channel.messages.fetch({
         limit: PAST_MESSAGES,
         before: message.id
