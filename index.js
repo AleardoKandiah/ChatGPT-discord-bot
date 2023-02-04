@@ -9,7 +9,7 @@ const config = new Configuration({
 
 const openai = new OpenAIApi(config)
 
-// specify what the bot is able to see 
+// specify what the bot is able to see
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
