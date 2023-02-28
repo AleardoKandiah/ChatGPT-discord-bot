@@ -2,7 +2,7 @@ const { Client, Events, GatewayIntentBits } = require("discord.js")
 require("dotenv/config")
 const { OpenAIApi, Configuration } = require("openai")
 
-// implement calls and link to GPT API       
+// implement calls and link to GPT API      
 const config = new Configuration({
     apiKey: process.env.OPENAI_KEY
 })
